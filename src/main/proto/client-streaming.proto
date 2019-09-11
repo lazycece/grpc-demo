@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package cs;
+
+option java_multiple_files = true;
+option java_package = "com.lazycece.grpc.demo.proto.cs";
+option java_outer_classname = "CStreamProto";
+
+// 定义服务
+service CStreamService {
+    rpc sayHello (stream HelloRequest) returns (HelloResponse) {}
+}
+
+// 定义请求体负载
+message HelloRequest {
+    string name = 1;
+}
+
+// 定义返回体负载
+message HelloResponse {
+    string message = 1;
+}

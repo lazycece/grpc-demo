@@ -3,7 +3,7 @@ syntax = "proto3";
 package bs;
 
 option java_multiple_files = true;
-option java_package = "com.lazycece.grpc.demo.proto.bs";
+option java_package = "com.lazycece.grpc.bs.proto";
 option java_outer_classname = "BStreamProto";
 
 // 定义服务

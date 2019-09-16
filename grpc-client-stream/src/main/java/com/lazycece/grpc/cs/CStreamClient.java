@@ -1,4 +1,4 @@
-package com.lazycece.grpc.demo.service.cs;
+package com.lazycece.grpc.cs;
 
 /**
  * @author lazycece

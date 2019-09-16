@@ -1,6 +1,6 @@
-//package com.lazycece.grpc.demo.service.unary;
+//package com.lazycece.grpc.unary;
 //
-//import com.lazycece.grpc.demo.proto.unary.UnaryServiceGrpc;
+//import com.lazycece.grpc.unary.proto.UnaryServiceGrpc;
 //import io.grpc.ManagedChannel;
 //import io.grpc.ManagedChannelBuilder;
 //

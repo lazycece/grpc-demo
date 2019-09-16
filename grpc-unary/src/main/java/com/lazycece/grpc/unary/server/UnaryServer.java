@@ -1,8 +1,8 @@
-package com.lazycece.grpc.demo.service.unary;
+package com.lazycece.grpc.unary.server;
 
-import com.lazycece.grpc.demo.proto.unary.HelloRequest;
-import com.lazycece.grpc.demo.proto.unary.HelloResponse;
-import com.lazycece.grpc.demo.proto.unary.UnaryServiceGrpc;
+import com.lazycece.grpc.unary.proto.HelloRequest;
+import com.lazycece.grpc.unary.proto.HelloResponse;
+import com.lazycece.grpc.unary.proto.UnaryServiceGrpc;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;

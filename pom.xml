@@ -5,8 +5,15 @@
 
 	<groupId>com.lazycece</groupId>
 	<artifactId>grpc-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>grpc-demo</name>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>grpc-client-stream</module>
+        <module>grpc-server-stream</module>
+        <module>grpc-bidirectional-stream</module>
+        <module>grpc-unary</module>
+    </modules>
+    <name>${project.artifactId}</name>
 	<description>A demo project for study grpc .</description>
 
 	<properties>

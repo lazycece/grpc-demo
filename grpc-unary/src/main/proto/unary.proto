@@ -3,7 +3,7 @@ syntax = "proto3";
 package unary;
 
 option java_multiple_files = true;
-option java_package = "com.lazycece.grpc.demo.proto.unary";
+option java_package = "com.lazycece.grpc.unary.proto";
 option java_outer_classname = "UnaryProto";
 
 // 定义服务

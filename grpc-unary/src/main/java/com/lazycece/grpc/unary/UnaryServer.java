@@ -1,4 +1,4 @@
-package com.lazycece.grpc.unary.server;
+package com.lazycece.grpc.unary;
 
 import com.lazycece.grpc.unary.proto.HelloRequest;
 import com.lazycece.grpc.unary.proto.HelloResponse;

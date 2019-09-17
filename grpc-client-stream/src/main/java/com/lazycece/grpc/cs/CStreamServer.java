@@ -1,11 +1,7 @@
 package com.lazycece.grpc.cs;
 
-import com.lazycece.grpc.cs.proto.CStreamServiceGrpc;
-import com.lazycece.grpc.cs.proto.HelloRequest;
-import com.lazycece.grpc.cs.proto.HelloResponse;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import io.grpc.stub.StreamObserver;
 
 import java.io.IOException;
 import java.util.logging.Logger;

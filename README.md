@@ -2,8 +2,8 @@
 A demo project  for study grpc .
 
 ## todo
-- [X] unary
-- [ ] client streaming
+- [x] unary
+- [x] client streaming
 - [x] server streaming
 - [ ] bidirectional streaming
 - [ ] extend

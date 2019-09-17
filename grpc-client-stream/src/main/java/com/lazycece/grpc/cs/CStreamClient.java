@@ -21,7 +21,7 @@ public class CStreamClient {
     private static final Logger logger = Logger.getLogger(CStreamClient.class.getName());
     private final ManagedChannel channel;
     private final CStreamServiceGrpc.CStreamServiceStub stub;
-    private static final CountDownLatch COUNT_DOWN_LATCH = new CountDownLatch(2);
+    private static final CountDownLatch COUNT_DOWN_LATCH = new CountDownLatch(1);
 
     private CStreamClient(String host, int port) {
         this(ManagedChannelBuilder.forAddress(host, port)
@@ -61,12 +61,12 @@ public class CStreamClient {
         @Override
         public void onNext(HelloResponse helloResponse) {
             logger.info(helloResponse.getMessage());
-            COUNT_DOWN_LATCH.countDown();
         }
 
         @Override
         public void onError(Throwable throwable) {
             logger.log(Level.WARNING, throwable.getMessage());
+            COUNT_DOWN_LATCH.countDown();
         }
 
         @Override

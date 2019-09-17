@@ -5,7 +5,7 @@ A demo project  for study grpc .
 - [x] unary
 - [x] client streaming
 - [x] server streaming
-- [ ] bidirectional streaming
+- [x] bidirectional streaming
 - [ ] extend
   - [ ] compress
   - [ ] error handling

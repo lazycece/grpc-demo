@@ -60,7 +60,6 @@ public class SStreamClient {
         @Override
         public void onNext(HelloResponse helloResponse) {
             logger.info(helloResponse.getMessage());
-            COUNT_DOWN_LATCH.countDown();
         }
 
         @Override
@@ -72,6 +71,7 @@ public class SStreamClient {
         @Override
         public void onCompleted() {
             logger.info("on completed");
+            COUNT_DOWN_LATCH.countDown();
         }
     }
 
